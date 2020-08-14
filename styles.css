@@ -1,4 +1,5 @@
 @import "media/font/norse-font.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 /* HEADER */
 .header {
@@ -20,6 +21,7 @@
   font-family: "Norse Bold";
   align-self: center;
   white-space: nowrap;
+  font-weight: bold;
 }
 
 .menu {
@@ -49,4 +51,40 @@
 .header-list a {
   text-decoration: none;
   color: inherit;
+}
+/* MAIN CONTENT */
+
+main {
+  margin-top: 50px;
+  font-family: "Open sans", Arial, Helvetica, sans-serif;
+}
+/* HEADLINE */
+.img {
+  justify-self: center;
+  display: grid;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 2px 4px 4px rgba(0,0,0,0.05);
+}
+
+.img img {
+  justify-self: center;
+  align-self: center;
+  width: 60px;
+}
+
+.title {
+  justify-self: center;
+  align-self: center;
+  font-weight: 300;
+  opacity: 0.7;
+  margin-top: 20px;
+}
+
+.subtitle {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
 }
