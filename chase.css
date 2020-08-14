@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-/* MAIN CODE */
+/******************* MAIN CODE ******************/
 
 /* NEW ROW */
 
@@ -147,3 +147,10 @@ h6 {
 .mute {
   opacity: 0.5;
 }
+
+.odin-gold {
+  color: #cc9543;
+}
+
+/* BUTTON */
+

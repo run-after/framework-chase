@@ -1,0 +1,52 @@
+@import "media/font/norse-font.css";
+
+/* HEADER */
+.header {
+  align-items: center;
+}
+
+.logo {
+  display: grid;
+  grid-auto-flow: column;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 40px;
+  justify-self: end;
+}
+
+.logo-text {
+  font-family: "Norse Bold";
+  align-self: center;
+  white-space: nowrap;
+}
+
+.menu {
+  grid-column-start: -1;
+  margin-right: 20px;
+}
+
+.hamburger div {
+  background: #6abfc3;
+  height: 1.8px;
+  width: 23px;
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 15px;
+}
+
+.header-list > li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header-list {
+  justify-self: end;
+  display: none;
+}
+
+.header-list a {
+  text-decoration: none;
+  color: inherit;
+}
