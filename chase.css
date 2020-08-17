@@ -57,6 +57,7 @@ table {
   grid-gap: 10px;
   margin: 10px 10px 10px 10px;
   grid-auto-flow: column;
+  width: 100%;
 }
 
 /* SPAN COLUMNS */

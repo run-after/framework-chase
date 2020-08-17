@@ -16,6 +16,7 @@
   display: grid;
   grid-auto-flow: column;
   text-decoration: none;
+  justify-self: start;
 }
 
 .logo img {
@@ -62,6 +63,8 @@
 main {
   margin-top: 100px;
   font-family: "Open sans", Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: center;
 }
 
 .chat {
@@ -105,14 +108,17 @@ main {
 }
 
 .subtitle {
+  justify-self: center;
   margin-top: 20px;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
+  width: 80%;
 }
 /* MAIN CONTENT */
 .main-content {
   margin-bottom: 100px;
+  max-width: 500px;
 }
 
 .main-content > * {
@@ -152,19 +158,24 @@ main {
   list-style-position: inside;
 }
 
-/*      */
+/* ETC */
 .container {
   background: #eeeeee;
   padding-bottom: 100px;
+  display: grid;
+  justify-items: center;
+  width: 100%;
 }
 
 .navigation-btns {
+  justify-self: center;
   background: white;
   margin: 50px 0 50px 0;
-  padding: 30px 0 30px 0;
+  padding: 30px;
   display: grid;
   justify-items: center;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
+  width: 400px;
 }
 
 .btn {
@@ -191,11 +202,11 @@ main {
 
 .improvement-link {
   text-decoration: none;
-  text-align: center;
+  justify-self: center;
 }
 
 .improvement-link img {
-  width: 30px;
+  width: 20px;
 }
 
 .question {
@@ -205,8 +216,10 @@ main {
   justify-items: center;
 }
 
-.question h5 {
+.question h6 {
   margin-top: 20px;
+  line-height: 2em;
+  width: 80%;
 }
 
 .question button {
@@ -215,6 +228,7 @@ main {
 }
 
 .ad {
+  justify-self: center;
   background: white;
   display: grid;
   justify-items: center;
@@ -222,6 +236,7 @@ main {
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
   line-height: 2em;
+  width: 65%;
 }
 
 .ad h4 {
@@ -237,7 +252,7 @@ main {
 .thinkful {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   margin-top: 20px;
-  width: 100%;
+  width: 95%;
 }
 
 .thinkful > * {
@@ -254,17 +269,90 @@ footer {
   align-content: center;
 }
 
-footer .imgs {
+footer .logo {
+  display: none;
+}
+
+footer a {
   align-self: center;
+  text-decoration: none;
+  color: inherit;
 }
 
 footer img{
-  width: 20px;
+  width: 25px;
   margin: 8px;
 }
 
 footer ul {
-  opacity: 0.7;
+  display: none;
   line-height: 2em;
   font-size: 0.9em;
+  justify-self: end;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 481px) {
+  footer ul {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  /* HEADER */
+  .header {
+    position: relative;
+    width: 100%;
+  }
+  
+  header .logo img {
+    width: 50px;
+  }
+  
+  header .logo-text {
+    font-size: 1.5em;
+  }
+  
+  .menu {
+    margin-right: 0;
+  }
+  
+  .hamburger div {
+    display: none;
+  }
+    
+  .header-list {
+    justify-self: end;
+    display: inherit;
+  }
+  /* MAIN CONTENT */
+  .main-content {
+    max-width: 90%;
+  }
+  .subtitle {
+    width: 100%;
+  }
+  /* ETC */
+
+  .navigation-btns {
+    width: 650px;
+  }
+
+  .question h6 {
+    width: 100%;
+  }
+
+  .thinkful h6 {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  /* FOOTER */
+  footer {
+    height: 280px;
+  }
+
+  footer .logo {
+    display: grid;
+  }
 }
