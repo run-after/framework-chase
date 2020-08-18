@@ -10,3 +10,6 @@ I used a CSS reset to keep the page looking the same in all browsers.
 
 I practiced mobile first layout and made the site responsive, just like the original page.
 
+I didn't make any of the links work, since that wasn't the purpose of this assignment. I just mocked the page to look and act like the original.
+
+I didn't implement any JavaScript as of now, but I will be learning that in the next section.
