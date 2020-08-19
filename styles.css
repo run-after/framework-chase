@@ -120,6 +120,7 @@ main {
 .main-content {
   margin-bottom: 100px;
   max-width: 500px;
+  min-width: 90%;
 }
 
 .main-content > * {
@@ -176,7 +177,7 @@ main {
   display: grid;
   justify-items: center;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  width: 90%;
 }
 
 .btn {
@@ -243,7 +244,7 @@ main {
 .ad h4 {
   text-align: center;
   padding-bottom: 20px;
-  width: 300px;
+  width: 80%;
 }
 
 .ad button {
@@ -283,6 +284,7 @@ footer .logo {
 .social {
   align-self: center;
   justify-self: center;
+  display: block;
 }
 
 footer a {
